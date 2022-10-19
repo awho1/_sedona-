@@ -101,31 +101,20 @@
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-.button_search {
-  padding: 12px 150px;
-}
+
 
 .button-card-more {
   padding: 8px 22px;
+  grid-area: button-more;
 }
 
 .button-card-favorive {
   padding: 8px 22px;
+  grid-area: button-chosen;
 }
 
 .button-card-favorive_added {
   padding: 8px 22px;
-}
-
-.newsletter__button {
-    border-radius: 0 10px 10px 0;
-    padding: 17px 0px;
-    width: 200px;
-}
-
-.button-header {
-  padding: 9px 36px;
-  margin-left: 20px;
 }
 
 .button_load-more {

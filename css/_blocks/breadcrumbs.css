@@ -1,4 +1,6 @@
 .breadcrumbs {
+  grid-column: 1/-1;
+  grid-row: 2/3;
   display: flex;
   list-style: none;
   padding: 0;

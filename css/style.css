@@ -8,7 +8,8 @@
 /*** Скрываем элементы ***/
 @import url(/css/_blocks/visually-hidden.css);
 
-
+/*** Кнопки  ***/
+@import url(/css/_blocks/button.css);
 
 /*** Cтраница ***/
 @import url(/css/_blocks/page.css);
@@ -49,8 +50,7 @@
 /*** Рассылка  ***/
 @import url(/css/_blocks/newsletter.css);
 
-/*** Кнопки  ***/
-@import url(/css/_blocks/button.css);
+
 
 /*** Footer  ***/
 @import url(/css/_blocks/footer.css);

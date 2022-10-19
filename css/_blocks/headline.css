@@ -15,18 +15,7 @@
 
 .headline_size-b {
     font-size: 60px;
-    line-height: 86px;
-}
-
-.headline_promo {
-    max-width: 720px;
-    margin-bottom: 31px;
-    text-transform: uppercase;
-}
-
-.headline_newsletter {
-    margin-bottom: 31px;
-    text-transform: uppercase;
+    line-height: 78px;
 }
 
 .headline_advantages {

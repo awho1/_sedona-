@@ -1,18 +1,17 @@
 .page-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 345px auto 264px;
 }
 
 .nav-list {
+  grid-column: 1/2;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 34px;
   align-items: center;
-  width: 345px;
   padding: 0 17px;
-
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -45,7 +44,9 @@
 }
 
 .additional-nav {
-  display: flex;
+  display: grid;
+  grid-column: 3/4;
+  grid-template-columns: 42px 42px 180px;
   align-items: center;
   width: 264px;
   padding: 0;
@@ -66,4 +67,9 @@
 
 .icon-button:active {
     fill:rgba(117, 98, 87, 1);
+}
+
+.button-header {
+  padding: 9px 36px;
+  margin-left: 20px;
 }
