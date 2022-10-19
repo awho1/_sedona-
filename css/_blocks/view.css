@@ -1,0 +1,54 @@
+.view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 224px;
+  margin: -4px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.view-item {
+  margin: 4px;
+}
+
+.view-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.view-link-cards {
+  background-image: url("/img/mode-tile 1.svg");
+}
+
+.view-link-slides {
+  background-image: url("/img/mode-slideshow 1.svg");
+}
+
+.view-link-list {
+  background-image: url("/img/mode-list 1.svg");
+}
+
+.view-link[href]:hover {
+  border-color: #83b3d3;
+}
+
+.view-link[href]:active {
+  border-color: #000000;
+}
+
+.view-link:focus {
+  outline: none;
+  border-color: #83b3d3;
+}
+
+.view-item-active .view-link {
+  border-color: #000000;
+}

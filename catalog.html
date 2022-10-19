@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Гостиницы в Седоне - Каталог</title>
+</head>
+<body class="page__body">
+  <header class="page-header page__header">
+    <a class="logo logo-header" href="#">
+      <img src="/img/logo.svg" alt" width="139" height="70">
+    </a>
+    <nav class="page-nav">
+        <ul class="nav-list">
+            <li class="nav-list__item">
+                <a class="nav-list__link " href="#">Главная</a>
+            </li>
+            <li class="nav-list__item">
+                <a class="nav-list__link" href="#">О Седоне</a>
+            </li>
+            <li class="nav-list__item">
+                <a class="nav-list__link nav-list__link_state-active" href="/catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <div class="additional-nav">
+              <a href="#" class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19.35 20.425L13.325 14.4C12.825 14.8333 12.2417 15.1708 11.575 15.4125C10.9083 15.6542 10.2 15.775 9.45 15.775C7.65 15.775 6.125 15.15 4.875 13.9C3.625 12.65 3 11.1417 3 9.375C3 7.60833 3.625 6.1 4.875 4.85C6.125 3.6 7.64167 2.975 9.425 2.975C11.1917 2.975 12.6958 3.6 13.9375 4.85C15.1792 6.1 15.8 7.60833 15.8 9.375C15.8 10.0917 15.6833 10.7833 15.45 11.45C15.2167 12.1167 14.8667 12.7417 14.4 13.325L20.475 19.35C20.625 19.4833 20.7 19.6542 20.7 19.8625C20.7 20.0708 20.6167 20.2583 20.45 20.425C20.3 20.575 20.1167 20.65 19.9 20.65C19.6833 20.65 19.5 20.575 19.35 20.425ZM9.425 14.275C10.775 14.275 11.925 13.7958 12.875 12.8375C13.825 11.8792 14.3 10.725 14.3 9.375C14.3 8.025 13.825 6.87083 12.875 5.9125C11.925 4.95417 10.775 4.475 9.425 4.475C8.05833 4.475 6.89583 4.95417 5.9375 5.9125C4.97917 6.87083 4.5 8.025 4.5 9.375C4.5 10.725 4.97917 11.8792 5.9375 12.8375C6.89583 13.7958 8.05833 14.275 9.425 14.275Z"/>
+                </svg>
+                <span class="visually-hidden">Поиск</span>
+              </a>
+              <a href="#" class="icon-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M10.975 20.1L9.65 18.875C7.58333 16.9583 5.79167 15.1292 4.275 13.3875C2.75833 11.6458 2 9.825 2 7.925C2 6.425 2.50417 5.17083 3.5125 4.1625C4.52083 3.15417 5.76667 2.65 7.25 2.65C8.1 2.65 8.94167 2.85417 9.775 3.2625C10.6083 3.67083 11.35 4.34167 12 5.275C12.7333 4.34167 13.4917 3.67083 14.275 3.2625C15.0583 2.85417 15.8833 2.65 16.75 2.65C18.2333 2.65 19.4792 3.15417 20.4875 4.1625C21.4958 5.17083 22 6.425 22 7.925C22 9.825 21.2417 11.6458 19.725 13.3875C18.2083 15.1292 16.4167 16.9583 14.35 18.875L13.025 20.1C12.7417 20.3667 12.4 20.5 12 20.5C11.6 20.5 11.2583 20.3667 10.975 20.1ZM11.35 6.925C10.9 6.10833 10.3083 5.44167 9.575 4.925C8.84167 4.40833 8.06667 4.15 7.25 4.15C6.15 4.15 5.25 4.50417 4.55 5.2125C3.85 5.92083 3.5 6.825 3.5 7.925C3.5 8.89167 3.825 9.90417 4.475 10.9625C5.125 12.0208 5.9 13.05 6.8 14.05C7.7 15.05 8.63333 15.9792 9.6 16.8375C10.5667 17.6958 11.3667 18.4167 12 19C12.6333 18.4333 13.4333 17.7167 14.4 16.85C15.3667 15.9833 16.3 15.0458 17.2 14.0375C18.1 13.0292 18.875 11.9958 19.525 10.9375C20.175 9.87917 20.5 8.875 20.5 7.925C20.5 6.825 20.1458 5.92083 19.4375 5.2125C18.7292 4.50417 17.8333 4.15 16.75 4.15C15.9167 4.15 15.1375 4.40417 14.4125 4.9125C13.6875 5.42083 13.0833 6.09167 12.6 6.925C12.5167 7.05833 12.425 7.15417 12.325 7.2125C12.225 7.27083 12.1083 7.3 11.975 7.3C11.8417 7.3 11.7208 7.27083 11.6125 7.2125C11.5042 7.15417 11.4167 7.05833 11.35 6.925V6.925Z"/>
+                </svg>
+                <span class="bage bage_count bage_icon-button">12</span>
+                <span class="visually-hidden">Избранное</span>
+              </a>
+              <a href="#" class="button button_size-small button_state-secondary button-header">Хочу сюда</a>
+          </div>
+    </nav>
+  </header>
+    <main class="page-main">
+        <section class="catalog-filter">
+            <h1 class="headline headline_size-b">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#" fill="white">
+                        <span class="visually-hidden">Главная страница</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="white" aria-hidden="true">
+                            <path d="M2.75 9.75H4.625V6.625H7.375V9.75H9.25V4.875L6 2.4375L2.75 4.875V9.75ZM2.75 10.5C2.54167 10.5 2.36458 10.4271 2.21875 10.2812C2.07292 10.1354 2 9.95833 2 9.75V4.875C2 4.75833 2.02708 4.64583 2.08125 4.5375C2.13542 4.42917 2.20833 4.34167 2.3 4.275L5.55 1.8375C5.61667 1.7875 5.6875 1.75 5.7625 1.725C5.8375 1.7 5.91667 1.6875 6 1.6875C6.08333 1.6875 6.1625 1.7 6.2375 1.725C6.3125 1.75 6.38333 1.7875 6.45 1.8375L9.7 4.275C9.79167 4.34167 9.86458 4.42917 9.91875 4.5375C9.97292 4.64583 10 4.75833 10 4.875V9.75C10 9.95833 9.92708 10.1354 9.78125 10.2812C9.63542 10.4271 9.45833 10.5 9.25 10.5H6.625V7.375H5.375V10.5H2.75Z"/>
+                        </svg>
+                    </a>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="rgba(255, 255, 255, 0.6)" aria-hidden="true">
+                        <path d="M2.94998 5.81656C2.90554 5.761 2.88193 5.69989 2.87915 5.63322C2.87637 5.56656 2.89998 5.50822 2.94998 5.45822L4.41665 3.99156L2.94165 2.51656C2.89721 2.47211 2.87637 2.41239 2.87915 2.33739C2.88193 2.26239 2.90554 2.20267 2.94998 2.15822C3.00554 2.10267 3.06526 2.07628 3.12915 2.07906C3.19304 2.08183 3.24998 2.10822 3.29998 2.15822L4.95832 3.81656C4.9861 3.84433 5.00554 3.87211 5.01665 3.89989C5.02776 3.92767 5.03332 3.95822 5.03332 3.99156C5.03332 4.02489 5.02776 4.05544 5.01665 4.08322C5.00554 4.111 4.9861 4.13878 4.95832 4.16656L3.30832 5.81656C3.25832 5.86656 3.19998 5.89017 3.13332 5.88739C3.06665 5.88461 3.00554 5.861 2.94998 5.81656V5.81656Z"/>
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Гостиницы
+                    </a>
+                </li>
+            </ul>
+            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
+                <fieldset class="filter-fieldset">
+                    <legend class="filter-title">Инфраструктура:</legend>
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <label class="control" class="label" for="pool">
+                                <input class="control-input" type="checkbox" id="pool" name="ifrostructure" value="Бассейн">
+                                <span class="control-lead">Бассейн</span>
+                            </label>
+                        </li>
+                        <li class="filter-item">
+                            <label class="control" class="label" for="parking">
+                                <input class="control-input" type="checkbox" id="parking" name="ifrostructure" value="Парковка">
+                                <span class="control-lead">Парковка</span>
+                            </label>
+                        </li>
+                        <li class="filter-item">
+                            <label class="control" for="wifi">
+                                <input class="control-input" type="checkbox" id="wifi" name="ifrostructure" value="Wi-Fi">
+                                <span class="control-lead">Wi-Fi</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-fieldset">
+                    <legend class="filter-title">Тип жилья:</legend>
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <label class="control" for="hotel">
+                                <input class="control-input" type="radio" id="hotel" name="tipe-living" value="Гостиница" checked>
+                                <span class="control-lead">Гостиница</span>
+                            </label>
+                        </li>
+                        <li class="filter-item">
+                            <label class="control" for="motel">
+                                <input class="control-input" type="radio" id="motel" name="tipe-living" value="Мотель">
+                                <span class="control-lead">Мотель</span>
+                            </label>
+                        </li>
+                        <li class="filter-item">
+                            <label class="control" for="apart">
+                                <input class="control-input" type="radio" id="apart" name="tipe-living" value="Апартементы">
+                                <span class="control-lead">Апартаменты</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-fieldset">
+                    <legend class="filter-title">Стоимость, ₽:</legend>
+                    <div class="range">
+                        <label class="range-field" for="min-price">
+                            <span class="range-title">от</span>
+                            <input class="range-input range-input_left" type="number" name="price-from" value="0" min="0" max="10000" step="100">
+                        </label>
+                        <label class="range-field" for="max-price">
+                            <span class="range-title">до</span>
+                            <input class="range-input range-input_right" type="number" name="price-from" value="0" min="0" max="10000" step="100">
+                        </label>
+                        <div class="range-slider slider">
+                            <div class="slider-bar">
+                              <button class="slider-thumb" type="button">
+                                <span class="visually-hidden">Ручка минимальной цены</span>
+                              </button>
+                              <button class="slider-thumb" type="button">
+                                <span class="visually-hidden">Ручка максимальной цены</span>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="filter-buttons">
+                    <button class="button button_size-small button_state-primary button_apply" type="submit">Применить</button>
+                    <button class="button button_size-small button_reset" type="reset">Сбросить</button>
+                  </div>
+            </form>
+        </section>
+        <section class="products">
+            <header class="products-header">
+                <h2 class="visually-hidden">Результаты поиска</h2>
+                <p class="headline headline_size-m headline_filter">Найдено гостиниц: 38</p>
+                <details class="select catalog-select">
+                  <summary class="select-button">Сначала дешёвые</summary>
+                  <ul class="select-menu">
+                    <li class="select-item select-item-active">
+                      <a class="select-option">Сначала дешёвые</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#">Сначала дорогие</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#">Сначала популярные</a>
+                    </li>
+                    <li class="select-item">
+                      <a class="select-option" href="#">Сначала комфортные</a>
+                    </li>
+                  </ul>
+                </details>
+                <ul class="view">
+                  <li class="view-item view-item-active">
+                    <a class="view-link view-link-cards">
+                      <span class="visually-hidden">Карточками</span>
+                    </a>
+                  </li>
+                  <li class="view-item">
+                    <a class="view-link view-link-slides" href="#">
+                      <span class="visually-hidden">Слайдами</span>
+                    </a>
+                  </li>
+                  <li class="view-item">
+                    <a class="view-link view-link-list" href="#">
+                      <span class="visually-hidden">Списком</span>
+                    </a>
+                  </li>
+                </ul>
+            </header>
+            <ul class="products-list">
+                <li class="products-list__item product-card">
+                    <img class="product-card__img" src="/img/hotel-1.png" alt="Отель Amara Resort & Spa" width="300" height="206">
+                        <a href="#" class="product-card__link product">
+                            <h4 class="headline headline_size-s">Amara Resort & Spa</h4>
+                        </a>
+                        <div class="product-card-description">
+                          <span class="product-card-descripton__title">Гостиница</span>
+                          <span class="product-card-descripton__price">от 4000₽</span>
+                        </div>
+                        <div class="product-card-buttons">
+                            <a class="button button_size-small button_state-secondary button-card-more" href="#">Подробнее</a>
+                            <a class="button button_size-small button_state-primary button-card-favorive" href="#">В Избранное</a>
+                        </div>
+                        <div class="product-card-raiting">
+                            <div class="product-card-raiting__stars">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_56664_103)">
+                                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_56664_103">
+                                    <rect width="18" height="17" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_56664_103)">
+                                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_56664_103">
+                                    <rect width="18" height="17" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_56664_103)">
+                                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_56664_103">
+                                    <rect width="18" height="17" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_56664_103)">
+                                    <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_56664_103">
+                                    <rect width="18" height="17" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span class="product-card-raiting__description">Рейтинг: 8,5</span>
+                          </div>
+                </li>
+                <li class="products-list__item product-card">
+                  <img class="product-card__img" src="/img/hotel-2.png" alt="Отель Amara Resort & Spa" width="300" height="206">
+                      <a href="#" class="product-card__link product">
+                          <h4 class="headline headline_size-s">Desert Quail Inn</h4>
+                      </a>
+                      <div class="product-card-description">
+                        <span class="product-card-descripton__title">Гостиница</span>
+                        <span class="product-card-descripton__price">от 4000₽</span>
+                      </div>
+                      <div class="product-card-buttons">
+                          <a class="button button_size-small button_state-secondary button-card-more" href="#">Подробнее</a>
+                          <a class="button button_size-small button_state-primary button-card-favorive" href="#">В Избранное</a>
+                      </div>
+                      <div class="product-card-raiting">
+                          <div class="product-card-raiting__stars">
+                              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_56664_103)">
+                                  <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_56664_103">
+                                  <rect width="18" height="17" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                              </svg>
+                              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_56664_103)">
+                                  <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_56664_103">
+                                  <rect width="18" height="17" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                              </svg>
+                              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_56664_103)">
+                                  <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_56664_103">
+                                  <rect width="18" height="17" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                              </svg>
+                              <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_56664_103)">
+                                  <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_56664_103">
+                                  <rect width="18" height="17" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                              </svg>
+                          </div>
+                          <span class="product-card-raiting__description">Рейтинг: 8,9</span>
+                        </div>
+              </li>
+              <li class="products-list__item product-card">
+                <img class="product-card__img" src="/img/hotel-3.png" alt="Отель Amara Resort & Spa" width="300" height="206">
+                    <a href="#" class="product-card__link product">
+                        <h4 class="headline headline_size-s">Villas at Poco Diablo</h4>
+                    </a>
+                    <div class="product-card-description">
+                      <span class="product-card-descripton__title">Гостиница</span>
+                      <span class="product-card-descripton__price">от 2000₽</span>
+                    </div>
+                    <div class="product-card-buttons">
+                        <a class="button button_size-small button_state-secondary button-card-more" href="#">Подробнее</a>
+                        <a class="button button_size-small button_state-seccess button-card-favorive" href="#">В Избранное</a>
+                    </div>
+                    <div class="product-card-raiting">
+                        <div class="product-card-raiting__stars">
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_56664_103)">
+                                <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_56664_103">
+                                <rect width="18" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_56664_103)">
+                                <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_56664_103">
+                                <rect width="18" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_56664_103)">
+                                <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_56664_103">
+                                <rect width="18" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_56664_103)">
+                                <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_56664_103">
+                                <rect width="18" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="product-card-raiting__description">Рейтинг: 9,2</span>
+                      </div>
+            </li>
+            <li class="products-list__item product-card">
+              <img class="product-card__img" src="/img/hotel-4.png" alt="Отель Amara Resort & Spa" width="300" height="206">
+                  <a href="#" class="product-card__link product">
+                      <h4 class="headline headline_size-s">GreenTree Inn</h4>
+                  </a>
+                  <div class="product-card-description">
+                    <span class="product-card-descripton__title">Гостиница</span>
+                    <span class="product-card-descripton__price">от 3000₽</span>
+                  </div>
+                  <div class="product-card-buttons">
+                      <a class="button button_size-small button_state-secondary button-card-more" href="#">Подробнее</a>
+                      <a class="button button_size-small button_state-primary button-card-favorive" href="#">В Избранное</a>
+                  </div>
+                  <div class="product-card-raiting">
+                      <div class="product-card-raiting__stars">
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_56664_103)">
+                              <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_56664_103">
+                              <rect width="18" height="17" fill="white"/>
+                              </clipPath>
+                              </defs>
+                          </svg>
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_56664_103)">
+                              <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_56664_103">
+                              <rect width="18" height="17" fill="white"/>
+                              </clipPath>
+                              </defs>
+                          </svg>
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_56664_103)">
+                              <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_56664_103">
+                              <rect width="18" height="17" fill="white"/>
+                              </clipPath>
+                              </defs>
+                          </svg>
+                          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_56664_103)">
+                              <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_56664_103">
+                              <rect width="18" height="17" fill="white"/>
+                              </clipPath>
+                              </defs>
+                          </svg>
+                      </div>
+                      <span class="product-card-raiting__description">Рейтинг: 9,2</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="load-more">
+                <button class="button button_size-medium button_state-primary button_load-more">Загрузить ещё</button>
+            </div>
+            <div class="products-footer">
+                <ul class="pagination">
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination button_pagination-active" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination" href>2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination" href>3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination" href>4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination" href>...</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="button button_state-primary button_pagination" href>10</a>
+                    </li>
+                </ul>
+                <div class="quantity">
+                    <span>Гостиниц на странице:</span>
+                    <details class="select quantity__seclet">
+                      <summary class="select-button">4</summary>
+
+                      <ul class="select-menu">
+                        <li class="select-item select-item-active">
+                          <a class="select-option" href="#">5</a>
+                        </li>
+                        <li class="select-item">
+                          <a class="select-option" href="#">6</a>
+                        </li>
+                        <li class="select-item">
+                          <a class="select-option" href="#">9</a>
+                        </li>
+                        <li class="select-item">
+                          <a class="select-option" href="#">12</a>
+                        </li>
+                      </ul>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter newsletter_clear">
+          <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+          <h3 class="headline headline_size-m headline_newsletter">Подпишитесь на рассылку</h3>
+          <p class="text text_size-m text_newsletter">Только полезная информация и никакого спама,<br>
+              честное бойскаутское!</p>
+          <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="newsletter__input" type="email" name="email" placeholder="Ваш e-mail">
+              <button class="button button_size-medium button_state-primary newsletter__button" type="submit">Подписаться</button>
+          </form>
+      </section>
+      <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list_link" href="#">
+                  <svg сlass="social-link__icon" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+                      <g clip-path="url(#clip0_1608_3)">
+                          <path d="M15.1003 43.5001C33.2091 43.5001 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0157 12.815 46.679 11.0886 48 9.11069C46.205 9.90929 44.2993 10.4309 42.3478 10.6576C44.4026 9.42591 45.9411 7.49104 46.6781 5.21163C44.7451 6.35721 42.6312 7.16532 40.4269 7.60131C38.9417 6.02321 36.978 4.97832 34.8394 4.62819C32.7008 4.27806 30.5064 4.64219 28.5955 5.66428C26.6846 6.68638 25.1636 8.3095 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3843 15.8959 15.3675 12.4 13.5963C8.90405 11.8251 5.81939 9.33897 3.34594 6.29913C2.0888 8.46658 1.70411 11.0314 2.27006 13.4723C2.83601 15.9132 4.31013 18.047 6.39281 19.4401C4.82926 19.3904 3.29995 18.9695 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8133 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.9901C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.115 7.24315 31.8259 8.89154 33.0528C10.5399 34.2796 12.5302 34.9613 14.5847 35.0026C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5029 15.1003 43.5001Z"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1608_3">
+                          <rect width="48" height="48" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="visually-hidden">Твитер</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list_link" href="#">
+                    <svg сlass="social-link__icon" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+                        <g clip-path="url(#clip0_1608_2)">
+                            <path  d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1608_2">
+                        <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="visually-hidden">Фейсбук</span>
+                  </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list_link" href="#">
+                    <svg сlass="social-link__icon" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+                        <path d="M47.5219 14.4001C47.5219 14.4001 47.0531 11.0907 45.6094 9.6376C43.7812 7.7251 41.7375 7.71572 40.8 7.60322C34.0875 7.11572 24.0094 7.11572 24.0094 7.11572H23.9906C23.9906 7.11572 13.9125 7.11572 7.2 7.60322C6.2625 7.71572 4.21875 7.7251 2.39062 9.6376C0.946875 11.0907 0.4875 14.4001 0.4875 14.4001C0.4875 14.4001 0 18.2907 0 22.172V25.8095C0 29.6907 0.478125 33.5813 0.478125 33.5813C0.478125 33.5813 0.946875 36.8907 2.38125 38.3438C4.20937 40.2563 6.60938 40.1907 7.67813 40.397C11.5219 40.7626 24 40.8751 24 40.8751C24 40.8751 34.0875 40.8563 40.8 40.3782C41.7375 40.2657 43.7812 40.2563 45.6094 38.3438C47.0531 36.8907 47.5219 33.5813 47.5219 33.5813C47.5219 33.5813 48 29.7001 48 25.8095V22.172C48 18.2907 47.5219 14.4001 47.5219 14.4001ZM19.0406 30.2251V16.7345L32.0062 23.5032L19.0406 30.2251Z"/>
+                    </svg>
+                    <span class="visually-hidden">Ютуб</span>
+                </a>
+            </li>
+        </ul>
+        <a class="footer-link footer-link_phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <a class="footer-link footer-link_developer" href="#">
+            <svg width="115" height="34" viewBox="0 0 115 34" aria-hidden="true">
+                <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
+                <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
+                <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z" />
+                <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" />
+                <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" />
+                <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z" />
+                <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" />
+                <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" />
+                <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z" />
+                <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" />
+                <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z" />
+                <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
+            </svg>
+        </a>
+    </footer>
+</body>
+</html>

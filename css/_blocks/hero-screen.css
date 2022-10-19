@@ -1,0 +1,8 @@
+.hero-screen {
+    position: relative;
+    top: -5px;
+    height: 485px;
+    background-image: url("/img/index-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,38 @@
+.headline {
+    font-weight: 700;
+    margin: 0;
+}
+
+.headline_size-s {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.headline_size-m {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.headline_size-b {
+    font-size: 60px;
+    line-height: 86px;
+}
+
+.headline_promo {
+    max-width: 720px;
+    margin-bottom: 31px;
+    text-transform: uppercase;
+}
+
+.headline_newsletter {
+    margin-bottom: 31px;
+    text-transform: uppercase;
+}
+
+.headline_advantages {
+    text-transform: uppercase;
+}
+
+.headline_filter {
+    margin: 0;
+}

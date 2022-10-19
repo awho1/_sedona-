@@ -1,0 +1,29 @@
+.text {
+    margin: 0 auto;
+}
+
+.text_small {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.text_medium {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.text_advantages {
+    width: 250px;
+}
+
+.text_search-promo {
+    margin-bottom: 54px;
+}
+
+.title_newsletter {
+    margin-bottom: 30px;
+}
+
+.text_newsletter {
+    margin-bottom: 54px;
+}

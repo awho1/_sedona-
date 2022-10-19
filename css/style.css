@@ -1,0 +1,80 @@
+
+/*** Глобальные стили ***/
+@import url(/css/_blocks/global.css);
+
+/*** Шрифты ***/
+@import url(/css/_blocks/fonts.css);
+
+/*** Скрываем элементы ***/
+@import url(/css/_blocks/visually-hidden.css);
+
+
+
+/*** Cтраница ***/
+@import url(/css/_blocks/page.css);
+
+/*** Header ***/
+@import url(/css/_blocks/page-header.css);
+
+/*** Logo ***/
+@import url(/css/_blocks/logo.css);
+
+/*** Navigation ***/
+@import url(/css/_blocks/page-nav.css);
+
+/*** Bage ***/
+@import url(/css/_blocks/bage.css);
+
+/*** Main ***/
+@import url(/css/_blocks/page-main.css);
+
+/*** Main Screen ***/
+@import url(/css/_blocks/hero-screen.css);
+
+/*** Promo block - about ***/
+@import url(/css/_blocks/promo.css);
+
+/*** Titles ***/
+@import url(/css/_blocks/headline.css);
+
+/*** Texts ***/
+@import url(/css/_blocks/text.css);
+
+/*** Приколюхи ***/
+@import url(/css/_blocks/advantages.css);
+
+/*** Promo - поиск отелей ***/
+@import url(/css/_blocks/search.css);
+
+/*** Рассылка  ***/
+@import url(/css/_blocks/newsletter.css);
+
+/*** Кнопки  ***/
+@import url(/css/_blocks/button.css);
+
+/*** Footer  ***/
+@import url(/css/_blocks/footer.css);
+
+
+@import url(/css/_blocks/slider.css);
+
+@import url(/css/_blocks/view.css);
+
+@import url(/css/_blocks/select.css);
+
+@import url(/css/_blocks/quantity.css);
+
+@import url(/css/_blocks/breadcrumbs.css);
+
+@import url(/css/_blocks/modal.css);
+
+@import url(/css/_blocks/filter.css);
+
+@import url(/css/_blocks/products.css);
+
+
+
+
+
+
+

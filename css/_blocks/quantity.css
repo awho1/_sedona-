@@ -1,0 +1,11 @@
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+}
+
+.quantity__seclet {
+  width: 160px;
+  margin: 0;
+}
